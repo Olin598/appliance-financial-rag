@@ -1,0 +1,126 @@
+{
+  "year": 2025,
+  "source": "巨潮资讯 http://www.cninfo.com.cn/",
+  "reports": [
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "title": "2025年年度报告",
+      "disclosed": "2026-03-31",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-31/1225065145.PDF",
+      "file": "data/pdf/000333_美的集团_2025年报.pdf",
+      "sha256": "16f95f70527db59dcf2736f276a9479cf7ee917e5f71e4f6cbbe83acbad9f4b6",
+      "bytes": 5942399
+    },
+    {
+      "code": "000651",
+      "name": "格力电器",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225250396.PDF",
+      "file": "data/pdf/000651_格力电器_2025年报.pdf",
+      "sha256": "7cc972f2d199e2ec3797cc5da479e8268afa59b77875770de3bcd3648242fb8c",
+      "bytes": 2350012
+    },
+    {
+      "code": "600690",
+      "name": "海尔智家",
+      "title": "海尔智家股份有限公司2025年年度报告",
+      "disclosed": "2026-03-27",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225038336.PDF",
+      "file": "data/pdf/600690_海尔智家_2025年报.pdf",
+      "sha256": "14186f9f9b47f687c527ba14825664f3b09e51759d581636cddcc248f26e3660",
+      "bytes": 1823191
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "title": "2025年年度报告",
+      "disclosed": "2026-03-31",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-31/1225050277.PDF",
+      "file": "data/pdf/000921_海信家电_2025年报.pdf",
+      "sha256": "142eb04c9c7bdd7d43420da623786ba3f5b8957bdd0c490dc1849f96d0310f68",
+      "bytes": 1520956
+    },
+    {
+      "code": "002668",
+      "name": "TCL智家",
+      "title": "2025年年度报告",
+      "disclosed": "2026-03-11",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-11/1225004114.PDF",
+      "file": "data/pdf/002668_TCL智家_2025年报.pdf",
+      "sha256": "20fd7c686c88363cf45dac41ff2122fcff467ab10888a277aceed882b553c91f",
+      "bytes": 3624726
+    },
+    {
+      "code": "000521",
+      "name": "长虹美菱",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-03",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF",
+      "file": "data/pdf/000521_长虹美菱_2025年报.pdf",
+      "sha256": "0c17719c5b657e32791332745e86252352bc968203bb539e764e3eca9a0a8adc",
+      "bytes": 1674808
+    },
+    {
+      "code": "002508",
+      "name": "老板电器",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-29",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-29/1225237757.PDF",
+      "file": "data/pdf/002508_老板电器_2025年报.pdf",
+      "sha256": "c347927027a30eac0df0ed695f6e5c005a9dd2af8d8337408f7850f310bec6e6",
+      "bytes": 1097971
+    },
+    {
+      "code": "002543",
+      "name": "万和电气",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-28",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-28/1225216912.PDF",
+      "file": "data/pdf/002543_万和电气_2025年报.pdf",
+      "sha256": "98457043cef3f0cb1ef5cbe4ce9b5f066d172aeee4e5035aa7e3394c92239fa6",
+      "bytes": 1398630
+    },
+    {
+      "code": "300894",
+      "name": "火星人",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-23",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-23/1225147804.PDF",
+      "file": "data/pdf/300894_火星人_2025年报.pdf",
+      "sha256": "1d6a098b122784e5d56243ca496372b6a346fe2908ac9e7df01e3be31ff7e6c9",
+      "bytes": 1522496
+    },
+    {
+      "code": "002032",
+      "name": "苏泊尔",
+      "title": "2025年年度报告",
+      "disclosed": "2026-04-03",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225076804.PDF",
+      "file": "data/pdf/002032_苏泊尔_2025年报.pdf",
+      "sha256": "d323425e24b34f7cfa8fbff819cdd1b0daa47a5bd331da6d27c9f956478a6a7b",
+      "bytes": 4332065
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "title": "2025年年度报告",
+      "disclosed": "2026-03-27",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF",
+      "file": "data/pdf/002242_九阳股份_2025年报.pdf",
+      "sha256": "7f226561affaccbc7109f134f8ffc20ecc2e6fc4938a535a2dd2813dac8c7210",
+      "bytes": 1103258
+    },
+    {
+      "code": "603355",
+      "name": "莱克电气",
+      "title": "莱克电气2025年年度报告",
+      "disclosed": "2026-04-16",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-16/1225106543.PDF",
+      "file": "data/pdf/603355_莱克电气_2025年报.pdf",
+      "sha256": "e4e8f077e2b3f245d335ff06558be50b6439a22e8ae65ad5651e3e350b396789",
+      "bytes": 1634817
+    }
+  ]
+}

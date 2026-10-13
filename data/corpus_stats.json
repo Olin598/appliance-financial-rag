@@ -1,0 +1,103 @@
+{
+  "chunk_size": 400,
+  "overlap": 60,
+  "total_chunks": 18671,
+  "per_report": [
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "pages": 276,
+      "tables": 106,
+      "text_chunks": 1013,
+      "table_chunks": 253
+    },
+    {
+      "code": "000651",
+      "name": "格力电器",
+      "pages": 219,
+      "tables": 300,
+      "text_chunks": 1113,
+      "table_chunks": 595
+    },
+    {
+      "code": "600690",
+      "name": "海尔智家",
+      "pages": 245,
+      "tables": 360,
+      "text_chunks": 1198,
+      "table_chunks": 712
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "pages": 221,
+      "tables": 348,
+      "text_chunks": 1055,
+      "table_chunks": 677
+    },
+    {
+      "code": "002668",
+      "name": "TCL智家",
+      "pages": 180,
+      "tables": 252,
+      "text_chunks": 906,
+      "table_chunks": 416
+    },
+    {
+      "code": "000521",
+      "name": "长虹美菱",
+      "pages": 293,
+      "tables": 451,
+      "text_chunks": 1359,
+      "table_chunks": 1036
+    },
+    {
+      "code": "002508",
+      "name": "老板电器",
+      "pages": 162,
+      "tables": 309,
+      "text_chunks": 747,
+      "table_chunks": 530
+    },
+    {
+      "code": "002543",
+      "name": "万和电气",
+      "pages": 180,
+      "tables": 310,
+      "text_chunks": 900,
+      "table_chunks": 613
+    },
+    {
+      "code": "300894",
+      "name": "火星人",
+      "pages": 211,
+      "tables": 372,
+      "text_chunks": 828,
+      "table_chunks": 577
+    },
+    {
+      "code": "002032",
+      "name": "苏泊尔",
+      "pages": 162,
+      "tables": 290,
+      "text_chunks": 985,
+      "table_chunks": 499
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "pages": 168,
+      "tables": 290,
+      "text_chunks": 706,
+      "table_chunks": 510
+    },
+    {
+      "code": "603355",
+      "name": "莱克电气",
+      "pages": 227,
+      "tables": 273,
+      "text_chunks": 927,
+      "table_chunks": 516
+    }
+  ]
+}

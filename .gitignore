@@ -1,0 +1,29 @@
+# 本地密钥与个人资料，绝不提交
+.env
+.env.*
+*.key
+
+# 原始 PDF 与抽取缓存（体积大，用 download_reports.py 可复现）
+data/pdf/
+data/extracted/
+models/
+
+# 索引产物（用 build_index.py 可重建）
+data/index/
+data/chunks.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# 评测中的临时文件
+evaluation/tmp/
+
+# 本地工具链与临时产物（不属于作业代码）
+node_modules
+work/
+*.log
+.DS_Store

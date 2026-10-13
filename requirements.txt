@@ -1,0 +1,11 @@
+# 作业3 · 家电财报问答知识库 · 运行依赖
+# 安装：python -m venv .venv && .venv/bin/pip install -r requirements.txt
+pymupdf>=1.24          # PDF 正文与表格抽取
+jieba>=0.42            # 中文分词（BM25 用）
+numpy>=1.26            # 向量矩阵运算
+onnxruntime>=1.17      # 本地跑 BGE ONNX 向量模型
+tokenizers>=0.15       # BGE 分词器
+fastapi>=0.110         # 问答页面后端
+uvicorn[standard]>=0.29
+requests>=2.31
+python-dotenv>=1.0

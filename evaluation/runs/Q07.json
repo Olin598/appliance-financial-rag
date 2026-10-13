@@ -1,0 +1,232 @@
+{
+  "question": {
+    "id": "Q07",
+    "type": "研发投入（表格+比率）",
+    "q": "长虹美菱 2025 年研发投入金额是多少？占营业收入多大比例？",
+    "ref": "研发投入金额 967,536,650.87 元（约 9.68 亿元），占营业收入 3.18%（上年 2.80%，增加 0.38 个百分点），同比增加 20.73%。",
+    "ref_source": "长虹美菱 2025 年年度报告「研发投入」",
+    "ref_code": "000521",
+    "ref_page": 25
+  },
+  "mode": "hybrid",
+  "topk": 6,
+  "run_at": "2026-10-13T22:01:23+0800",
+  "retrieval_seconds": -0.0,
+  "answer": "长虹美菱 2025 年研发投入金额为 967,536,650.87 元 [1][2]，研发投入占营业收入比例为 3.18% [1][2]。",
+  "citations": [
+    {
+      "n": 1,
+      "chunk_id": "000521-p25-t3",
+      "name": "长虹美菱",
+      "section": "公司研发投入情况",
+      "pdf_page": 25,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=25"
+    },
+    {
+      "n": 2,
+      "chunk_id": "000521-p25-tb3-1",
+      "name": "长虹美菱",
+      "section": "（五）现金流",
+      "pdf_page": 25,
+      "kind": "table",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=25"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1276,
+    "completion_tokens": 43,
+    "total_tokens": 1319,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    },
+    "prompt_cache_hit_tokens": 1024,
+    "prompt_cache_miss_tokens": 252
+  },
+  "elapsed": 1.48,
+  "company_scope": "长虹美菱",
+  "query_rewritten": "长虹美菱 2025 年研发投入金额及占营业收入比例",
+  "panorama": false,
+  "retrieved": [
+    {
+      "chunk_id": "000521-p25-t3",
+      "name": "长虹美菱",
+      "section": "公司研发投入情况",
+      "pdf_page": 25,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=25",
+      "rank": 1,
+      "rrf": 0.032787,
+      "vec_rank": 1,
+      "bm25_rank": 1,
+      "cos": 0.839,
+      "bm25": 30.191,
+      "text_head": "2025 年\n2024 年\n变动比例\n研发投入金额（元）\n967,536,650.87\n801,412,208.23\n20.73%\n研发投入占营业收入比\n例\n3.18%\n2.80%\n增加0.38 个百分点\n研发投入资本化的金额\n（元）\n239,564,698.54\n207,422,076.26\n15.50%\n资本化研发投入占研发\n投入的比例\n24.76%\n25.88%\n减少1.12 个百分点",
+      "rank_in_vector_topk": 1,
+      "rank_in_bm25_topk": 1
+    },
+    {
+      "chunk_id": "000521-p25-tb3-1",
+      "name": "长虹美菱",
+      "section": "（五）现金流",
+      "pdf_page": 25,
+      "kind": "table",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=25",
+      "rank": 2,
+      "rrf": 0.031754,
+      "vec_rank": 4,
+      "bm25_rank": 2,
+      "cos": 0.8002,
+      "bm25": 27.504,
+      "text_head": "列名：2025 年；2024 年；变动比例\n研发投入金额（元）；2025 年: 967,536,650.87；2024 年: 801,412,208.23；变动比例: 20.73%\n研发投入占营业收入比 例；2025 年: 3.18%；2024 年: 2.80%；变动比例: 增加0.38 个百分点\n研发投入资本化的金额 （元）；2025 年: 239,564,698.54；2024 年: 207,422,076.26；变动比例: 15.50%\n资本化研发投入占研发 投入的比例；2025 年: 24.76%；2024 年: 25.88%；变动比例: 减少1.12 个百分点",
+      "rank_in_vector_topk": 4,
+      "rank_in_bm25_topk": 2
+    },
+    {
+      "chunk_id": "000521-p18-t4",
+      "name": "长虹美菱",
+      "section": "单位：元",
+      "pdf_page": 18,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=18",
+      "rank": 3,
+      "rrf": 0.030579,
+      "vec_rank": 3,
+      "bm25_rank": 8,
+      "cos": 0.8076,
+      "bm25": 16.405,
+      "text_head": "2025 年\n2024 年\n同比增减\n金额\n占营业收\n入比重\n金额\n占营业收\n入比重\n营业收入合计\n30,407,926,517.70\n100%\n28,601,036,014.96\n100%\n6.32%\n分行业",
+      "rank_in_vector_topk": 3,
+      "rank_in_bm25_topk": null
+    },
+    {
+      "chunk_id": "000521-p140-t2",
+      "name": "长虹美菱",
+      "section": "1. 事项描述",
+      "pdf_page": 140,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=140",
+      "rank": 4,
+      "rrf": 0.024644,
+      "vec_rank": 48,
+      "bm25_rank": 5,
+      "cos": 0.773,
+      "bm25": 16.839,
+      "text_head": "相关信息披露详见财务报表附注三(三十)及五(二)1 所述。\n长虹美菱公司的销售收入主要来源于向国内外客户销售冰箱（柜）、空调、洗衣机、\n小家电及厨卫等家电产品，2025 年度，营业收入金额为人民币3,040,792.65 万元，其中\n冰箱（柜）、空调及洗衣机产品收入2,853,390.02 万元，占营业收入的93.84%。\n由于营业收入是长虹美菱公司关键业绩指标之一，可能存在长虹美菱公司管理层（以\n下简称管理层）通过不恰当的收入确认以达到特定目标或预期的固有风险，因此，我们将\n收入确认确定为关键审计事项。",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": null
+    },
+    {
+      "chunk_id": "000521-p19-t5",
+      "name": "长虹美菱",
+      "section": "行业分类",
+      "pdf_page": 19,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=19",
+      "rank": 5,
+      "rrf": 0.024415,
+      "vec_rank": 8,
+      "bm25_rank": 43,
+      "cos": 0.7962,
+      "bm25": 11.322,
+      "text_head": "单位：元\n行业分类\n项目\n2025 年\n2024 年\n同比增\n减\n金额\n占营业成\n本比重\n金额\n占营业成\n本比重\n家用电器制造\n原材料\n24,700,911,697.51\n91.32%\n23,131,923,420.76\n91.57%\n6.78%",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": null
+    },
+    {
+      "chunk_id": "000521-p18-tb1-1",
+      "name": "长虹美菱",
+      "section": "单位：元",
+      "pdf_page": 18,
+      "kind": "table",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-04-03/1225077806.PDF#page=18",
+      "rank": 6,
+      "rrf": 0.022602,
+      "vec_rank": 17,
+      "bm25_rank": 44,
+      "cos": 0.7856,
+      "bm25": 11.279,
+      "text_head": "列名：2025 年；2024 年；同比增减\n2025 年: 金额；占营业收 入比重；2024 年: 金额；占营业收 入比重\n营业收入合计；2025 年: 30,407,926,517.70；100%；2024 年: 28,601,036,014.96；100%；同比增减: 6.32%\n分行业\n家用电器制造；2025 年: 30,132,656,540.50；99.09%；2024 年: 28,335,360,230.42；99.07%；同比增减: 6.34%\n其他业务；2025 年: 275,269,977.20；0.91%；2024 年: 265,675,784.54；0.93%；同比增减: 3.61%\n分产品\n冰箱、冰柜；2025 年: 8,945,930,733.45；29.42%；2024 年: 9,560,071,716.63；33.43%；同比增减: -6.42%",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": null
+    }
+  ],
+  "retrieval_comparison": {
+    "vector": [
+      {
+        "rank": 1,
+        "chunk_id": "000521-p25-t3",
+        "name": "长虹美菱",
+        "section": "公司研发投入情况",
+        "pdf_page": 25,
+        "kind": "text",
+        "score": 0.8390308022499084
+      },
+      {
+        "rank": 2,
+        "chunk_id": "000521-p247-t1",
+        "name": "长虹美菱",
+        "section": "六、研发支出",
+        "pdf_page": 247,
+        "kind": "text",
+        "score": 0.807985782623291
+      },
+      {
+        "rank": 3,
+        "chunk_id": "000521-p18-t4",
+        "name": "长虹美菱",
+        "section": "单位：元",
+        "pdf_page": 18,
+        "kind": "text",
+        "score": 0.8076239824295044
+      },
+      {
+        "rank": 4,
+        "chunk_id": "000521-p25-tb3-1",
+        "name": "长虹美菱",
+        "section": "（五）现金流",
+        "pdf_page": 25,
+        "kind": "table",
+        "score": 0.8001521229743958
+      },
+      {
+        "rank": 5,
+        "chunk_id": "000521-p149-tb2-3",
+        "name": "长虹美菱",
+        "section": "二、营业总成本",
+        "pdf_page": 149,
+        "kind": "table",
+        "score": 0.7977427244186401
+      },
+      {
+        "rank": 6,
+        "chunk_id": "000521-p233-t1",
+        "name": "长虹美菱",
+        "section": "1. 营业收入/营业成本",
+        "pdf_page": 233,
+        "kind": "text",
+        "score": 0.7977036833763123
+      }
+    ],
+    "bm25": [
+      {
+        "rank": 1,
+        "chunk_id": "000521-p25-t3",
+        "name": "长虹美菱",
+        "section": "公司研发投入情况",
+        "pdf_page": 25,
+        "kind": "text",
+        "score": 30.1906795501709
+      },
+      {
+        "rank": 2,
+        "chunk_id": "000521-p25-tb3-1",
+        "name": "长虹美菱",
+        "section": "（五）现金流",
+        "pdf_page": 25,
+        "kind": "table",
+        "score": 27.504369735717773
+      }
+    ]
+  }
+}

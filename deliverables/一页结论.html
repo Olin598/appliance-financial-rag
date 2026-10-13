@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>作业3 一页结论 · 家电行业年报问答知识库</title>
+<style>
+  @page { size: A4; margin: 12mm 13mm; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color:#1a1a1a; font-size:9.2pt; line-height:1.5; background:#fff;
+  }
+  h1 { font-size:15pt; line-height:1.3; margin-bottom:1mm; letter-spacing:-.2px; }
+  .sub { font-size:8.4pt; color:#666; margin-bottom:3mm; }
+  h2 { font-size:10pt; margin:3.2mm 0 1.4mm; padding-left:2.4mm;
+       border-left:2.6pt solid #1f6feb; color:#0b3d91; }
+  p { margin-bottom:1.2mm; }
+  ul { margin:0 0 1.2mm 4mm; }
+  li { margin-bottom:.6mm; }
+  .kpis { display:flex; gap:2.4mm; margin:2.6mm 0 0; }
+  .kpi { flex:1; border:1px solid #d8e1ee; border-radius:1.6mm; padding:1.8mm 2mm; background:#f7faff; }
+  .kpi .v { font-size:13.2pt; font-weight:700; color:#1f6feb; line-height:1.15; }
+  .kpi .l { font-size:7.6pt; color:#556; margin-top:.3mm; }
+  table { width:100%; border-collapse:collapse; margin:1.4mm 0; font-size:8.2pt; }
+  th, td { border:1px solid #dde3ec; padding:1mm 1.4mm; text-align:left; }
+  th { background:#eef4ff; font-weight:600; color:#123; }
+  td.n, th.n { text-align:right; }
+  .ok { color:#1a7f37; font-weight:600; }
+  .muted { color:#666; }
+  .note { font-size:7.8pt; color:#666; margin-top:.8mm; }
+  .two { display:flex; gap:4mm; }
+  .two > div { flex:1; }
+  .hl { background:#fff8e1; padding:0 .6mm; border-radius:.6mm; }
+</style>
+</head>
+<body>
+
+<h1>基于 12 家家电上市公司 2025 年年度报告的问答知识库</h1>
+<div class="sub">复旦 · MF70050.01 人工智能与数据分析 · 作业 3（方向 A）｜语料：12 份年报全文，共 2,544 页、18,671 个知识块</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="v">12 家</div><div class="l">家电上市公司 2025 年报</div></div>
+  <div class="kpi"><div class="v">18,671</div><div class="l">知识块（正文 11,737 + 表格 6,934）</div></div>
+  <div class="kpi"><div class="v">78.8%</div><div class="l">十题关键数值命中（26/33）</div></div>
+  <div class="kpi"><div class="v">100%</div><div class="l">回答带页码级出处</div></div>
+</div>
+
+<h2>一、做了什么</h2>
+<p>把美的、格力、海尔智家、海信家电、TCL智家、长虹美菱、老板电器、万和电气、火星人、苏泊尔、九阳股份、莱克电气 12 家公司 2025 年年度报告（巨潮资讯网原文 PDF）做成一个可提问的问答知识库，答案必须给出处、可点回年报原文对应页。</p>
+
+<h2>二、三个关键做法</h2>
+<ul>
+  <li><b>表格语义化切块（最关键）。</b>年报 PDF 直接抽取的表格是「空单元格 + 竖线」，块里既没有公司名也没有年份——实测含「美的营业收入 456,451,731」的那一块，BM25 排不进前 200、向量排到第 607。改为把表格重排成<span class="hl">「列名: 数值；列名: 数值」</span>的自然语言，并给每块加上「公司（代码）报告名｜章节｜第 N 页」前缀后，同一块立刻排到第 1。</li>
+  <li><b>混合检索 + 查询改写。</b>BM25（k1=1.5, b=0.75）与向量（本地 ONNX BGE-small-zh，512 维）双路召回，用 RRF 融合；提问先经大模型改写成检索式——口语化的「去年赚了多少钱」才能命中「归母净利润」。</li>
+  <li><b>按问题类型切换检索策略。</b>问「为什么下降」时把候选限定在「行业情况 / 主营业务分析」等叙述性章节（避免被财报附注挤掉）；问「谁最高谁最低」这类跨公司全景题时逐家召回再汇总，避免只召回两三家。</li>
+</ul>
+
+<h2>三、评测（10 题，题目与参考答案先冻结、答案逐条对照年报原文核对）</h2>
+<table>
+  <tr>
+    <th>题号 / 类型</th><th class="n">命中</th><th class="n">耗时</th>
+    <th>题号 / 类型</th><th class="n">命中</th><th class="n">耗时</th>
+  </tr>
+  <tr>
+    <td>Q01 单公司·数字</td><td class="n">3/5</td><td class="n">2.3s</td>
+    <td>Q06 经营解释（跨段归纳）</td><td class="n ok">3/3</td><td class="n">2.9s</td>
+  </tr>
+  <tr>
+    <td>Q02 单公司·数字</td><td class="n">2/3</td><td class="n">2.1s</td>
+    <td>Q07 研发投入（表+比率）</td><td class="n">1/2</td><td class="n">1.5s</td>
+  </tr>
+  <tr>
+    <td>Q03 分季度（跨列读取）</td><td class="n ok">8/9</td><td class="n">1.9s</td>
+    <td>Q08 跨公司全景</td><td class="n ok">2/2</td><td class="n">4.0s</td>
+  </tr>
+  <tr>
+    <td>Q04 跨表·比率</td><td class="n">1/2</td><td class="n">1.6s</td>
+    <td>Q09 跨公司全景</td><td class="n ok">3/4</td><td class="n">2.7s</td>
+  </tr>
+  <tr>
+    <td>Q05 口语化提问</td><td class="n ok">3/3</td><td class="n">1.6s</td>
+    <td>Q10 库外题（应拒答）</td><td class="n ok">正确拒答</td><td class="n">1.2s</td>
+  </tr>
+</table>
+<p class="note">「命中」= 参考答案中的关键数字有几个出现在模型答案里（换单位、换口径的同一数字算命中）。<b>合计 26/33 = 78.8%</b>。未命中的 7 个全部是题干没有问到、只是参考答案里顺带列的对照数字（如上期数、扣非净利），并非答错。</p>
+
+<h2>四、三个结论</h2>
+<div class="two">
+  <div>
+    <ul>
+      <li><b>切块方式比模型更决定成败。</b>同样的检索与生成，只改表格的文本化方式，就把一道关键题从「完全检索不到」变成「排第一」。PDF 表格进知识库，必须先还原语义。</li>
+      <li><b>检索要按问题类型分流。</b>数字题走表格块、原因题走叙述章节、全景题逐主体召回——一套统一的 Top-K 无法同时满足这三类。</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><b>口径必须写进提示词。</b>「营业总收入」与「营业收入」（美的 4,585 亿 vs 4,564.52 亿）、「净利润 / 归母净利润 / 扣非净利润」在同一份年报里并存，不显式约束，模型就会串口径。</li>
+      <li><b>答不出要敢说答不出。</b>库外题（2026 半年报）正确返回「资料中未找到」，而不是编造数字——这是可用性的底线。</li>
+    </ul>
+  </div>
+</div>
+
+<h2>五、局限与下一步</h2>
+<p>答案的完整性受限于「块内可见信息」：跨页表格、需要相减得出的比率，仍可能漏答。下一步打算把「主要会计数据」等标准表结构化成键值表，让数值类问题走查表而非检索；并把评测集从 10 题扩到 50 题，按题型分别统计。此外本地 ONNX 模型（512 维）在长表述上的分辨力弱于大型嵌入模型，是当前检索上限之一。</p>
+
+</body>
+</html>

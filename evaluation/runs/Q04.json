@@ -1,0 +1,259 @@
+{
+  "question": {
+    "id": "Q04",
+    "type": "跨表·比率型指标",
+    "q": "九阳股份 2025 年的销售费用率是多少？",
+    "ref": "16.95%，同比下降 0.07 个百分点；同期销售费用 139,157.73 万元，同比下降 7.61%。",
+    "ref_source": "九阳股份 2025 年年度报告「管理层讨论与分析」",
+    "ref_code": "002242",
+    "ref_page": 12
+  },
+  "mode": "hybrid",
+  "topk": 6,
+  "run_at": "2026-10-13T22:01:17+0800",
+  "retrieval_seconds": 0.0,
+  "answer": "九阳股份 2025 年销售费用率为 16.95% [4]。",
+  "citations": [
+    {
+      "n": 4,
+      "chunk_id": "002242-p12-t2",
+      "name": "九阳股份",
+      "section": "1、概述",
+      "pdf_page": 12,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=12"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1321,
+    "completion_tokens": 19,
+    "total_tokens": 1340,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 169
+  },
+  "elapsed": 1.55,
+  "company_scope": "九阳股份",
+  "query_rewritten": "九阳股份 2025 年销售费用率是多少？",
+  "panorama": false,
+  "retrieved": [
+    {
+      "chunk_id": "002242-p14-tb3-1",
+      "name": "九阳股份",
+      "section": "2、收入与成本",
+      "pdf_page": 14,
+      "kind": "table",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=14",
+      "rank": 1,
+      "rrf": 0.030579,
+      "vec_rank": 3,
+      "bm25_rank": 8,
+      "cos": 0.8072,
+      "bm25": 8.73,
+      "text_head": "列名：前五名客户合计销售金额（元）；3,037,108,782.23\n前五名客户合计销售金额（元）: 前五名客户合计销售金额占年度销售总额比例；3,037,108,782.23: 37.30%\n前五名客户合计销售金额（元）: 前五名客户销售额中关联方销售额占年度销售总额比例；3,037,108,782.23: 8.79%",
+      "rank_in_vector_topk": 3,
+      "rank_in_bm25_topk": null
+    },
+    {
+      "chunk_id": "002242-p157-t1",
+      "name": "九阳股份",
+      "section": "4、本期股份支付费用",
+      "pdf_page": 157,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=157",
+      "rank": 2,
+      "rrf": 0.029644,
+      "vec_rank": 6,
+      "bm25_rank": 9,
+      "cos": 0.7926,
+      "bm25": 8.698,
+      "text_head": "九阳股份有限公司2025 年年度报告全文\n157\n授予对象类别\n以权益结算的股份支付费用\n以现金结算的股份支付费用\n管理人员\n244,780.62\n研发人员\n210,371.69\n销售人员\n2,393.34\n合计\n457,545.65",
+      "rank_in_vector_topk": 6,
+      "rank_in_bm25_topk": null
+    },
+    {
+      "chunk_id": "002242-p13-t4",
+      "name": "九阳股份",
+      "section": "2、收入与成本",
+      "pdf_page": 13,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=13",
+      "rank": 3,
+      "rrf": 0.029031,
+      "vec_rank": 16,
+      "bm25_rank": 3,
+      "cos": 0.7755,
+      "bm25": 10.059,
+      "text_head": "6,114.75\n5,241,272,625.55\n29.02%\n2.04%\n3.16%\n-0.78%\n境外销售\n825,127,010.61\n770,744,277.73\n6.59%\n-48.83%\n-49.02%\n0.35%\n分销售模式\n线上销售\n5,467,498,218.95\n3,885,551,222.75\n28.93%\n3.40%\n2.27%\n0.78%\n线下销售\n2,742,264,906.41\n2,126,465,680.53\n22.46%\n-23.00%\n-23.87%\n0.88%\n公司主营业务数据统计口径在报告期发生调整的情况下，公司最近1 年按报告期末口径调整后的主营业务数据\n□适用不适用\n（3）公司实物销售收入是否大于劳务收入\n是□否\n行业分类\n项目\n单位\n2025 年\n2024 年\n同比增减\n家电行业\n销售量\n万台\n5,821\n5,743\n1.36%\n生产量",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": 3
+    },
+    {
+      "chunk_id": "002242-p12-t2",
+      "name": "九阳股份",
+      "section": "1、概述",
+      "pdf_page": 12,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=12",
+      "rank": 4,
+      "rrf": 0.028589,
+      "vec_rank": 22,
+      "bm25_rank": 1,
+      "cos": 0.7723,
+      "bm25": 17.392,
+      "text_head": "2025 年，公司实现营业收入820,976.31 万元，较上年同期下降7.23%；面对行业环境变化，公司积\n极优化产品结构，传统优势品类经营保持韧性，新进细分品类稳步培育。\n2025 年，公司营业成本601,201.69 万元，同比下降8.80%。公司毛利率同比上涨1.27 个百分点。\n2025 年，公司销售费用139,157.73 万元，同比下降7.61%，销售费用率16.95%，同比下降0.07 个百\n分点；管理费用38,113.06 万元，同比下降0.88%，管理费用率4.64%，同比上升0.30 个百分点，研发投\n入30,297.10 万元，同比下降16.07%。",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": 1
+    },
+    {
+      "chunk_id": "002242-p12-t3",
+      "name": "九阳股份",
+      "section": "1、概述",
+      "pdf_page": 12,
+      "kind": "text",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=12",
+      "rank": 5,
+      "rrf": 0.027894,
+      "vec_rank": 25,
+      "bm25_rank": 2,
+      "cos": 0.7698,
+      "bm25": 11.71,
+      "text_head": "0.88%，管理费用率4.64%，同比上升0.30 个百分点，研发投\n入30,297.10 万元，同比下降16.07%。\n报告期内，公司新增专利申请1,005 项（其中发明申请139 项，实用新型677 项，外观设计申请189\n项），截至报告期末，公司共拥有专利技术15,070 项（其中发明专利1,150 项，实用新型12,106 项，外\n观设计1,814 项）。\n2025 年，公司实现利润总额9,753.91 万元，同比上升98.76%；实现归属于上市公司股东的净利润",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": 2
+    },
+    {
+      "chunk_id": "002242-p13-tb1-2",
+      "name": "九阳股份",
+      "section": "2、收入与成本",
+      "pdf_page": 13,
+      "kind": "table",
+      "url": "http://static.cninfo.com.cn/finalpage/2026-03-27/1225036494.PDF#page=13",
+      "rank": 6,
+      "rrf": 0.027651,
+      "vec_rank": 9,
+      "bm25_rank": 16,
+      "cos": 0.7826,
+      "bm25": 8.332,
+      "text_head": "列名：分产品\n分产品: 境内销售；7,384,636,114.75；89.95%；7,236,820,047.85；81.78%；2.04%\n分产品: 境外销售；825,127,010.61；10.05%；1,612,494,676.93；18.22%；-48.83%\n分产品: 分销售模式\n分产品: 线上销售；5,467,498,218.95；66.60%；5,287,732,082.17；59.75%；3.40%\n分产品: 线下销售；2,742,264,906.41；33.40%；3,561,582,642.61；40.25%；-23.00%",
+      "rank_in_vector_topk": null,
+      "rank_in_bm25_topk": null
+    }
+  ],
+  "retrieval_comparison": {
+    "vector": [
+      {
+        "rank": 1,
+        "chunk_id": "002242-p15-t3",
+        "name": "九阳股份",
+        "section": "3、费用",
+        "pdf_page": 15,
+        "kind": "text",
+        "score": 0.8132436275482178
+      },
+      {
+        "rank": 2,
+        "chunk_id": "002242-p131-t2",
+        "name": "九阳股份",
+        "section": "64、销售费用",
+        "pdf_page": 131,
+        "kind": "text",
+        "score": 0.8101019859313965
+      },
+      {
+        "rank": 3,
+        "chunk_id": "002242-p14-tb3-1",
+        "name": "九阳股份",
+        "section": "2、收入与成本",
+        "pdf_page": 14,
+        "kind": "table",
+        "score": 0.8071963787078857
+      },
+      {
+        "rank": 4,
+        "chunk_id": "002242-p14-t3",
+        "name": "九阳股份",
+        "section": "2、收入与成本",
+        "pdf_page": 14,
+        "kind": "text",
+        "score": 0.7993218898773193
+      },
+      {
+        "rank": 5,
+        "chunk_id": "002242-p133-tb1-1",
+        "name": "九阳股份",
+        "section": "76、所得税费用",
+        "pdf_page": 133,
+        "kind": "table",
+        "score": 0.7940690517425537
+      },
+      {
+        "rank": 6,
+        "chunk_id": "002242-p157-t1",
+        "name": "九阳股份",
+        "section": "4、本期股份支付费用",
+        "pdf_page": 157,
+        "kind": "text",
+        "score": 0.7926416397094727
+      }
+    ],
+    "bm25": [
+      {
+        "rank": 1,
+        "chunk_id": "002242-p12-t2",
+        "name": "九阳股份",
+        "section": "1、概述",
+        "pdf_page": 12,
+        "kind": "text",
+        "score": 17.392070770263672
+      },
+      {
+        "rank": 2,
+        "chunk_id": "002242-p12-t3",
+        "name": "九阳股份",
+        "section": "1、概述",
+        "pdf_page": 12,
+        "kind": "text",
+        "score": 11.709754943847656
+      },
+      {
+        "rank": 3,
+        "chunk_id": "002242-p13-t4",
+        "name": "九阳股份",
+        "section": "2、收入与成本",
+        "pdf_page": 13,
+        "kind": "text",
+        "score": 10.059295654296875
+      },
+      {
+        "rank": 4,
+        "chunk_id": "002242-p36-t1",
+        "name": "九阳股份",
+        "section": "2、内部控制审计报告",
+        "pdf_page": 36,
+        "kind": "text",
+        "score": 9.672401428222656
+      },
+      {
+        "rank": 5,
+        "chunk_id": "002242-p151-t1",
+        "name": "九阳股份",
+        "section": "5、关联交易情况",
+        "pdf_page": 151,
+        "kind": "text",
+        "score": 9.542703628540039
+      },
+      {
+        "rank": 6,
+        "chunk_id": "002242-p14-t2",
+        "name": "九阳股份",
+        "section": "2、收入与成本",
+        "pdf_page": 14,
+        "kind": "text",
+        "score": 9.328073501586914
+      }
+    ]
+  }
+}
