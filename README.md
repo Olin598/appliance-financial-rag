@@ -7,6 +7,24 @@ PDF 页码和官方原文链接。
 
 只完成方向 A（把知识放进库里检索），没有训练或微调模型。
 
+---
+
+## 📌 核验指引（先看这里）
+
+| 要看什么 | 直接打开 |
+| --- | --- |
+| **财报问答的可复核代码** | [`rag.py`](rag.py)（召回 + 回答）、[`build_chunks.py`](build_chunks.py)（文字/表格切块）、[`build_index.py`](build_index.py)（BM25 索引）、[`embedding.py`](embedding.py)（向量）、[`app.py`](app.py)（问答服务）、[`extract_reports.py`](extract_reports.py)（PDF 抽取） |
+| **12 家官方全文来源** | **[`SOURCES.md`](SOURCES.md)** —— 12 家公司的巨潮资讯官方 PDF 链接、披露日期、页数、SHA-256 |
+| **10 道题完整逐题运行记录** | **[`evaluation/逐题运行记录.md`](evaluation/逐题运行记录.md)** —— 每题含召回证据（`chunk_id` / 公司 / 章节 / PDF 页码 / 文字或表格 / 向量排名 / BM25 排名 / 原文片段）、单路召回对照、**答案判定**、**未中原因** |
+| 冻结的题目与参考答案 | [`evaluation/questions.json`](evaluation/questions.json)（运行前冻结，答案人工核对并标了页码） |
+| 原始运行数据（机器可读） | `evaluation/runs/Q01.json` … `Q10.json` |
+| 切块样例（文字 / 表格 + 公司 / 章节 / 页码） | [`data/chunks_sample.jsonl`](data/chunks_sample.jsonl)（12 家 × 4 条） |
+| 一页结论 | `deliverables/一页结论.pdf` |
+
+> 10 道题中 **Q08、Q09 是跨公司全景题**（12 家公司横向比较），Q10 是库外时点题（应当拒答）。
+
+---
+
 ## 结果一览
 
 | 指标 | 值 |
@@ -23,11 +41,12 @@ PDF 页码和官方原文链接。
 
 | 作业要求 | 本仓库对应位置 |
 | --- | --- |
-| 代码仓库 | 本仓库 |
+| 代码仓库 | 本仓库（`git clone` 后按「运行」一节 5 条命令可完整复现） |
 | 页面截图 | `deliverables/问答页面.png`、`deliverables/全景问答.png` |
 | 一页结论（PDF） | `deliverables/一页结论.pdf` |
-| 10 道题逐题记录 | `evaluation/questions.json`（运行前冻结）、`evaluation/runs/`、`evaluation/逐题评测.md` |
-| 语料与来源 | `data/sources.json`（每份年报的官方 URL、报告期、页数、SHA-256） |
+| 10 道题逐题记录 | `evaluation/questions.json`（运行前冻结）、`evaluation/runs/Q01–Q10.json`（原始数据）、**`evaluation/逐题运行记录.md`（含召回证据 / 判定 / 未中原因）**、`evaluation/逐题评测.md` |
+| 语料与官方来源 | **`SOURCES.md`**（12 家公司官方全文链接 + 校验值）、`data/sources.json`（机器可读原表） |
+| 切块样例 | `data/chunks_sample.jsonl`（文字 / 表格两类，含公司、章节、PDF 页码） |
 
 ---
 
@@ -132,7 +151,7 @@ DASHSCOPE_API_KEY=sk-...        # 向量化用（阿里云百炼 text-embedding-
 
 ## 来源与边界
 
-- 年报全文：[巨潮资讯网](https://www.cninfo.com.cn/)，逐份链接与校验值见 `data/sources.json`。
+- 年报全文：[巨潮资讯网](https://www.cninfo.com.cn/)，逐份链接、披露日期与 SHA-256 校验值见 **`SOURCES.md`**（机器可读原表在 `data/sources.json`）。
 - 向量模型：[BAAI/bge-small-zh-v1.5](https://huggingface.co/BAAI/bge-small-zh-v1.5)；
   本地无法下载模型时回退阿里云百炼 text-embedding-v4。
 - 页面只监听本机回环地址；模型输出与原文都做 HTML 转义后渲染。
